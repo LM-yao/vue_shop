@@ -1,0 +1,42 @@
+/* 全局样式表 */
+/* 占满全屏*/
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* 最小宽度，不会出现换行的问题，会加入下侧的滚动条 */
+  min-width: 1366px;
+}
+/* 覆盖默认样式 面包屑加入下margin 把卡片视图向下挤 */
+
+.el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+/* 卡片视图重置阴影 加入！important 才能显示*/
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+/* 表格和搜索框之间的间距 */
+.el-table {
+  margin-top: 15px;
+  font-size: 12px;
+}
+/* 页码条和表格之间的间隙 */
+.el-pagination {
+  margin-top: 15px;
+}
+/* 添加商品的步骤条上下间距 */
+.el-steps {
+  margin: 15px 0;
+}
+/* 添加商品的步骤条的文本大小，可以在浏览器中开发者模式中看到属于el-step__title */
+.el-step__title {
+  font-size: 13px;
+}
+/* 富文本编辑器的高度 */
+.ql-editor {
+  min-height: 300px;
+}
